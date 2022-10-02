@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link type="text/css" rel="stylesheet"  href="./css/style.css">
+<title>Create an account</title>
+</head>
+<body>
+    <div class="con_index">
+        <nav>
+            <div>
+                <h1><a href='./index.html'>Zocial</a></h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a class="navButton active" href="./register.html">Register</a></li>
+                    <li><a class="navButton" href="./login.html">Login</a></li>
+                    <li><a class="navButton" href="./post.html">Create&nbsp;Post</a></li>
+                    <li><a class="navButton" href="./Posts">Explore&nbsp;Post</a></li>
+                </ul>
+            </div>
+        </nav>
+	
+        <div class="hero">
+	<form class="foco"  action="RegisterServlet" method="post" >
+            
+                <div  class="inp">
+                    <h2>Register</h2>
+		</div>
+	
+			<label for="name">Name: </label>
+			<input type="text" placeholder="Mr Bean" id="name" name="name"/>
+                        
+		
+			<label for="email">Email: </label>
+			<input type="email" placeholder="mrbean@mail.com" id="email" name="email"/>
+		
+		
+			<label for="password">Password: </label>
+			<input type="password" id="password" name="password"/>
+		
+			<label for="confirm_password">Confirm Password: </label>
+			<input type="password" id="confirm_password" name="confirm_password"/>
+		
+                <div class="inp">
+                    <button>Submit</button>
+                </div>	
+	</form>
+        </div>
+    </div>
+    
+</body>
+</html>

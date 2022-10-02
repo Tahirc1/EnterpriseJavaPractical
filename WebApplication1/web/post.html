@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet"  href="./css/style.css">
+<title>Create Post</title>
+</head>
+<body>
+    <div class="con_index">
+        <nav>
+            <div>
+                <h1><a href='./index.html'>Zocial</a></h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a class="navButton active" href="./register.html">Register</a></li>
+                    <li><a class="navButton" href="./login.html">Login</a></li>
+                    <li><a class="navButton" href="./post.html">Create&nbsp;Post</a></li>
+                    <li><a class="navButton" href="./Posts">Explore&nbsp;Post</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+	<form class="foco" action="CreatePostServlet" method="POST" enctype="multipart/form-data"  >
+            <div>
+                <h2>New Post</h2>
+            </div>
+
+		<label for="image" >Upload an Image</label>
+		<input type="file" id="image" name="image" accept=".jpg, .jpeg, .png" />
+	
+	
+		<label for="desc">Description</label>
+		<textarea rows="5" cols="40" name="desc" id="desc">hello</textarea>
+	
+	<div class="inp">
+		<button>Submit</button>
+	</div>
+	</form>
+        </div>
+    </div>
+</body>
+</html>
